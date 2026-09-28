@@ -1,0 +1,91 @@
+// POWER BI MEASURES — create ONE at a time via Modeling > New measure.
+// Set the imported table name to EXACTLY 'Student Performance'.
+// Format Average score measures to 2 decimals. Attendance Share measures as Percentage.
+
+// 01: Student Count
+Student Count =
+COUNTROWS('Student Performance')
+
+// 02: Avg Exam Score
+Avg Exam Score =
+AVERAGE('Student Performance'[Exam_Score])
+
+// 03: Median Exam Score
+Median Exam Score =
+MEDIAN('Student Performance'[Exam_Score])
+
+// 04: Avg Study Hours
+Avg Study Hours =
+AVERAGE('Student Performance'[Hours_Studied])
+
+// 05: Avg Attendance (percentage, FORMAT as %)
+Avg Attendance % =
+DIVIDE(AVERAGE('Student Performance'[Attendance]), 100)
+
+// 06: Average Tutoring Sessions
+Avg Tutoring Sessions =
+AVERAGE('Student Performance'[Tutoring_Sessions])
+
+// 07: Students With Tutoring
+Students With Tutoring =
+CALCULATE(
+    [Student Count],
+    KEEPFILTERS('Student Performance'[Tutoring_Sessions] > 0)
+)
+
+// 08: Tutoring Share (FORMAT as %)
+Tutoring Share % =
+DIVIDE([Students With Tutoring], [Student Count])
+
+// 09: Students With Attendance >= 80
+High Attendance Students =
+CALCULATE(
+    [Student Count],
+    KEEPFILTERS('Student Performance'[Attendance] >= 80)
+)
+
+// 10: High Attendance Share (FORMAT as %)
+High Attendance Share % =
+DIVIDE([High Attendance Students], [Student Count])
+
+// 11: Average Score With Tutoring (keeps other slicers; ignores tutoring-group slicer)
+Avg Score With Tutoring =
+CALCULATE(
+    [Avg Exam Score],
+    REMOVEFILTERS('Student Performance'[Tutoring_Group]),
+    'Student Performance'[Tutoring_Group] = "1+ sessions"
+)
+
+// 12: Average Score Without Tutoring (keeps other slicers)
+Avg Score Without Tutoring =
+CALCULATE(
+    [Avg Exam Score],
+    REMOVEFILTERS('Student Performance'[Tutoring_Group]),
+    'Student Performance'[Tutoring_Group] = "No tutoring"
+)
+
+// 13: Unadjusted tutoring gap — descriptive, NOT a treatment effect.
+Observed Tutoring Score Gap =
+[Avg Score With Tutoring] - [Avg Score Without Tutoring]
+
+// 14: Average Score for records in the conventional 0-100 range.
+Avg Score (Within 0-100) =
+CALCULATE(
+    [Avg Exam Score],
+    KEEPFILTERS('Student Performance'[Score_Quality_Flag] = "Within 0-100")
+)
+
+// 15: Number of flagged source records (without responding to quality-flag slicer)
+Score Quality Flags =
+CALCULATE(
+    [Student Count],
+    REMOVEFILTERS('Student Performance'[Score_Quality_Flag]),
+    'Student Performance'[Score_Quality_Flag] = "Above 100"
+)
+
+// 16: Context-aware cohort average; useful as an example in cards.
+Avg Exam Score (All Study Groups) =
+CALCULATE(
+    [Avg Exam Score],
+    REMOVEFILTERS('Student Performance'[Study_Hours_Range])
+)

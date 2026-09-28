@@ -1,0 +1,10 @@
+test_bi_grain_flags_missing (test_project.ProjectTests.test_bi_grain_flags_missing) ... ok
+test_original_q1_exact_shape_and_filter (test_project.ProjectTests.test_original_q1_exact_shape_and_filter) ... ok
+test_original_q2_4_groups_and_totals (test_project.ProjectTests.test_original_q2_4_groups_and_totals) ... ok
+test_original_q3_dense_rank (test_project.ProjectTests.test_original_q3_dense_rank) ... ok
+test_summary_matrices_complete (test_project.ProjectTests.test_summary_matrices_complete) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.149s
+
+OK

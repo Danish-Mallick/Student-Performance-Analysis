@@ -1,0 +1,5 @@
+Study_Hours_Range,students,avg_score,order
+1-5 hours,59,62.6271,1
+6-10 hours,306,64.2255,2
+11-15 hours,1140,65.2044,3
+16+ hours,5102,67.9234,4

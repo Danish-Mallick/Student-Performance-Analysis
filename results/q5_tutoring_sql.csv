@@ -1,0 +1,9 @@
+hours_studied_range,tutoring_group,students,avg_exam_score
+1-5 hours,1+ sessions,50,63.06
+1-5 hours,No tutoring,9,60.22
+6-10 hours,1+ sessions,230,64.51
+6-10 hours,No tutoring,76,63.37
+11-15 hours,1+ sessions,874,65.48
+11-15 hours,No tutoring,266,64.29
+16+ hours,1+ sessions,3940,68.12
+16+ hours,No tutoring,1162,67.25

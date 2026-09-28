@@ -1,0 +1,9 @@
+Study_Hours_Range,Tutoring_Group,students,avg_score,study_order
+1-5 hours,1+ sessions,50,63.0600,1
+1-5 hours,No tutoring,9,60.2222,1
+6-10 hours,1+ sessions,230,64.5087,2
+6-10 hours,No tutoring,76,63.3684,2
+11-15 hours,1+ sessions,874,65.4840,3
+11-15 hours,No tutoring,266,64.2857,3
+16+ hours,1+ sessions,3940,68.1228,4
+16+ hours,No tutoring,1162,67.2470,4

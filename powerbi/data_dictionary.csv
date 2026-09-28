@@ -1,0 +1,28 @@
+field,dtype_prepared,description,missing_prepared
+Student_ID,int64,Stable row number assigned during cleaning; not an identifying student key.,0
+Hours_Studied,int64,Study hours per week.,0
+Attendance,int64,Percent of classes attended on a 0-100 scale.,0
+Parental_Involvement,object,Parental involvement (original source field).,0
+Access_to_Resources,object,Access to resources (original source field).,0
+Extracurricular_Activities,object,Extracurricular activities (original source field).,0
+Sleep_Hours,int64,Sleep hours (original source field).,0
+Previous_Scores,int64,Previous scores (original source field).,0
+Motivation_Level,object,Motivation level (original source field).,0
+Internet_Access,object,Internet access (original source field).,0
+Tutoring_Sessions,int64,Tutoring sessions (original source field).,0
+Family_Income,object,Family income (original source field).,0
+Teacher_Quality,object,Original category; raw missing becomes Unknown in prepared data.,0
+School_Type,object,School type (original source field).,0
+Peer_Influence,object,Peer influence (original source field).,0
+Physical_Activity,int64,Physical activity (original source field).,0
+Learning_Disabilities,object,Learning disabilities (original source field).,0
+Parental_Education_Level,object,Original category; raw missing becomes Unknown in prepared data.,0
+Distance_from_Home,object,Original category; raw missing becomes Unknown in prepared data.,0
+Gender,object,Gender (original source field).,0
+Exam_Score,int64,Final exam score; one raw source row has score 101 and is retained with a flag.,0
+Study_Hours_Range,object,"Nonoverlapping group: 1-5, 6-10, 11-15 or 16+ hours.",0
+Study_Range_Order,int64,Numeric sort order for Study_Hours_Range in Power BI.,0
+Attendance_Band,object,"Attendance group: 60-69%, 70-79%, 80-89%, 90-100%.",0
+Attendance_Band_Order,int64,Numeric sort order for Attendance_Band in Power BI.,0
+Tutoring_Group,object,At least one monthly tutoring session vs no sessions.,0
+Score_Quality_Flag,object,Above 100 vs Within 0-100; raw outlier retained and visible.,0

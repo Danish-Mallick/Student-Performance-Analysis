@@ -1,0 +1,5 @@
+study_group,attendance_group,students,avg_exam_score
+16+ hours,80%+,2577,69.85
+16+ hours,<80%,2525,65.96
+<16 hours,80%+,776,66.78
+<16 hours,<80%,729,62.91

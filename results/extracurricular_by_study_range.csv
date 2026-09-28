@@ -1,0 +1,9 @@
+Study_Hours_Range,Extracurricular_Activities,students,avg_score,study_order
+1-5 hours,No,19,61.3158,1
+1-5 hours,Yes,40,63.2500,1
+11-15 hours,No,451,64.8182,3
+11-15 hours,Yes,689,65.4572,3
+16+ hours,No,2065,67.6494,4
+16+ hours,Yes,3037,68.1096,4
+6-10 hours,No,134,63.7761,2
+6-10 hours,Yes,172,64.5756,2

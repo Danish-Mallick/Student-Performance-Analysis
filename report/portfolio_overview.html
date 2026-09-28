@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student performance | Portfolio analysis</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#eef4f7;color:#12263A;font-family:Arial,Helvetica,sans-serif;line-height:1.55}.shell{max-width:1120px;margin:auto;padding:26px}
+.hero{background:#12263A;padding:54px 58px;border-radius:21px;color:#fff}.hero small{color:#96E3D8;letter-spacing:.11em;font-weight:bold}h1{font-size:47px;line-height:1.07;max-width:790px;margin:16px 0}.lead{font-size:19px;color:#cde0e7;max-width:800px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:25px 0}.kpis div{background:white;border:1px solid #d7e6ed;border-radius:16px;padding:24px 19px}.kpis b{display:block;font-size:34px;color:#2176AE}.kpis small{color:#586b77}section{background:white;border:1px solid #dbe6eb;border-radius:18px;margin:20px 0;padding:25px 36px}section img{width:100%;max-width:100%;display:block;max-height:480px;object-fit:contain}section p{color:#475e70}.sectiontop{display:flex;align-items:center;gap:15px}.sectiontop span{font-size:16px;color:#129E91;font-weight:900}.sectiontop h2{font-size:26px}.notice{background:#e5f4f0;border-left:6px solid #129E91;padding:20px 25px;border-radius:10px;margin:20px 0}footer{text-align:center;color:#566574;padding:25px}a{color:#2176AE}@media(max-width:800px){.hero{padding:30px}h1{font-size:34px}.kpis{grid-template-columns:repeat(2,1fr)}section{padding:14px}}</style>
+</head><body><div class="shell"><header class="hero"><small>PORTFOLIO CASE STUDY / SQL · PYTHON · POWER BI</small>
+<h1>What patterns appear in student exam performance?</h1><p class="lead">A readable, reproducible exploration of 6,607 synthetic student records, with SQL queries, Python analysis and a Power BI-ready dataset.</p></header>
+<div class="kpis"><div><b>6,607</b><small>student records</small></div><div><b>67.24</b><small>average exam score</small></div><div><b>+0.58</b><small>attendance correlation</small></div><div><b>+0.45</b><small>study-hours correlation</small></div></div>
+<div class="notice"><strong>Executive summary.</strong> Attendance and study hours are positively associated with scores in these records. A tutoring difference is visible within study-hour groups; sleep-hour means are nearly flat. None of these observational patterns prove cause and effect.</div>
+<section><div class="sectiontop"><span>01</span><h2>Study habits</h2></div>
+<img loading="lazy" src="../charts/01_study_hours.png" alt="Study habits chart"><p>Scores are higher on average in longer-study groups, but sample sizes are uneven.</p></section>
+<section><div class="sectiontop"><span>02</span><h2>Attendance</h2></div>
+<img loading="lazy" src="../charts/02_attendance.png" alt="Attendance chart"><p>The 90–100% attendance band averages 70.14 versus 64.21 in the 60–69% band.</p></section>
+<section><div class="sectiontop"><span>03</span><h2>Combined view</h2></div>
+<img loading="lazy" src="../charts/03_attendance_study_heatmap.png" alt="Combined view chart"><p>Each cell shows its sample size: inspect attendance and study hours together.</p></section>
+<section><div class="sectiontop"><span>04</span><h2>Tutoring</h2></div>
+<img loading="lazy" src="../charts/04_tutoring.png" alt="Tutoring chart"><p>The within-study-hour comparisons remain descriptive, not a tutoring treatment effect.</p></section>
+<section><div class="sectiontop"><span>05</span><h2>Sleep</h2></div>
+<img loading="lazy" src="../charts/05_sleep.png" alt="Sleep chart"><p>Nearly flat observed differences; the vertical axis is zoomed and labeled.</p></section>
+<section><div class="sectiontop"><span>06</span><h2>Correlations</h2></div>
+<img loading="lazy" src="../charts/06_correlations.png" alt="Correlations chart"><p>Attendance and study hours have larger observed numeric correlations with the exam score.</p></section>
+<section><h2>Data quality and limitations</h2><p>The raw dataset contains 78 missing teacher-quality values, 90 missing parental-education values, 67 missing distance values and a single exam score of 101. Missing text values become "Unknown" in the Power BI export; the out-of-range score is retained and flagged for transparent sensitivity checks. Because these data are synthetic, the results should not be generalized to actual schools.</p>
+<p>The <code>notebooks/student_performance_analysis.ipynb</code> file contains executable analysis. The <code>powerbi/</code> folder contains the data, theme, DAX and step-by-step report instructions; a native PBIX needs to be saved from Power BI Desktop.</p></section>
+<footer>Student Performance | Descriptive education analytics | Dataset source: Kaggle - Lai Nguyen</footer></div></body></html>

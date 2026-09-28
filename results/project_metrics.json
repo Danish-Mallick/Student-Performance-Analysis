@@ -1,0 +1,90 @@
+{
+  "record_count": 6607,
+  "average_score": 67.23565914938702,
+  "median_score": 67.0,
+  "average_attendance": 79.97744816104132,
+  "avg_study_hours": 19.975329196306948,
+  "corr_attendance": 0.5810718633120632,
+  "corr_study_hours": 0.44545495407528174,
+  "corr_sleep": -0.017021628571502398,
+  "missing_total": 235,
+  "mean_difference_excluding_flagged": 0.005111162708246297,
+  "study_bands": [
+    {
+      "Study_Hours_Range": "1-5 hours",
+      "students": 59,
+      "avg_score": 62.6271186440678,
+      "order": 1
+    },
+    {
+      "Study_Hours_Range": "6-10 hours",
+      "students": 306,
+      "avg_score": 64.22549019607843,
+      "order": 2
+    },
+    {
+      "Study_Hours_Range": "11-15 hours",
+      "students": 1140,
+      "avg_score": 65.20438596491228,
+      "order": 3
+    },
+    {
+      "Study_Hours_Range": "16+ hours",
+      "students": 5102,
+      "avg_score": 67.9233633869071,
+      "order": 4
+    }
+  ],
+  "attendance_bands": [
+    {
+      "Attendance_Band": "60-69%",
+      "students": 1573,
+      "avg_score": 64.20788302606485,
+      "order": 1
+    },
+    {
+      "Attendance_Band": "70-79%",
+      "students": 1681,
+      "avg_score": 66.279000594884,
+      "order": 2
+    },
+    {
+      "Attendance_Band": "80-89%",
+      "students": 1607,
+      "avg_score": 68.04169259489733,
+      "order": 3
+    },
+    {
+      "Attendance_Band": "90-100%",
+      "students": 1746,
+      "avg_score": 70.1426116838488,
+      "order": 4
+    }
+  ],
+  "case_study": [
+    {
+      "Study_Group": "16+ hours",
+      "Attendance_Group": "80%+",
+      "students": 2577,
+      "avg_score": 69.84516880093132
+    },
+    {
+      "Study_Group": "16+ hours",
+      "Attendance_Group": "<80%",
+      "students": 2525,
+      "avg_score": 65.9619801980198
+    },
+    {
+      "Study_Group": "<16 hours",
+      "Attendance_Group": "80%+",
+      "students": 776,
+      "avg_score": 66.77963917525773
+    },
+    {
+      "Study_Group": "<16 hours",
+      "Attendance_Group": "<80%",
+      "students": 729,
+      "avg_score": 62.908093278463646
+    }
+  ]
+}

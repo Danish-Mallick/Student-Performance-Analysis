@@ -1,0 +1,10 @@
+{
+  "name": "Student Performance | Analytical Teal",
+  "dataColors": ["#2176AE", "#129E91", "#8269B4", "#DE9A4B", "#7391AD", "#56BEB4", "#C96862", "#B0C7D4"],
+  "background": "#F4F7FA",
+  "foreground": "#12263A",
+  "tableAccent": "#129E91",
+  "good": "#129E91",
+  "neutral": "#DE9A4B",
+  "bad": "#C96862"
+}
