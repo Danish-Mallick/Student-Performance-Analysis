@@ -51,14 +51,6 @@ The three required outputs are stored under `sql/` and their executed results un
 
 The additional SQL questions are [attendance × study](sql/04_attendance_study_interaction.sql), [tutoring inside study bands](sql/05_tutoring_within_study_ranges.sql), [sleep groups](sql/06_sleep_hours.sql), [teacher quality including missing values](sql/07_teacher_quality.sql) and [data quality](sql/08_data_quality.sql). **PostgreSQL** is the target dialect; the lightweight local runner executes the equivalent logic using SQLite so reviewers do not need database credentials.
 
-## Power BI: prepared for Desktop
-
-![Conceptual layout for Power BI page 1 — design mock-up, NOT an actual Power BI screenshot](powerbi/dashboard_design_mockup.png)
-
-The repository contains a **ready-to-import 6,607-row CSV**, **16 separately defined DAX measures**, a theme and detailed page-by-page field mappings. Four planned Power BI pages are: **Executive overview**, **Study habits × attendance**, **Tutoring and wellbeing**, and **Data quality / methodology**.
-
-**The native interactive `.pbix` is not included in this distribution.** It needs to be assembled/saved using Power BI Desktop. All source assets and a precise report recipe are included: **[Power BI Desktop build guide](powerbi/POWER_BI_BUILD_GUIDE.md)**. Once built, add your `.pbix` to `powerbi/` and replace this mock-up with an actual screenshot; do not present the design mock-up as a finished dashboard.
-
 ## How the analysis works
 
 ```mermaid
