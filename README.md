@@ -1,6 +1,8 @@
 # Student Performance: What Patterns Appear Behind Exam Scores?
 
-![Student performance: the analytical snapshot](charts/00_hero.png)
+![Student Performance Analytics — redesigned dashboard preview](charts/PREVIEW_OVERVIEW.png)
+
+*Dashboard design preview. The editable Power BI project and reproduction instructions are available in the `powerbi/` folder.*
 
 **An end-to-end SQL → Python → Power BI portfolio case study** based on **6,607 synthetic student records**. The project starts with three introductory SQL challenges and develops them into a reproducible analysis, a recruiter-friendly report and a ready-to-build interactive Power BI dashboard.
 
